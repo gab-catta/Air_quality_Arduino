@@ -1,7 +1,8 @@
 # Air Quality Monitor with Arduino UNO (WORK IN PROGRESS, blocked till MH-Z19E sensor doesn't arrive)
 
 A real-time air quality monitoring system using Arduino UNO, PMS7003T sensor (particulates, humidity, temperature), and MH-Z19E CO2 sensor.
-
+## Guide to install the IDE i used 
+https://youtu.be/PYSy_PLjytQ?si=8XRxT0Szch06liR9
 ## Components Required
 
 - **Arduino UNO R3**
