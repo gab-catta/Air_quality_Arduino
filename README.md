@@ -9,6 +9,7 @@ https://youtu.be/PYSy_PLjytQ?si=8XRxT0Szch06liR9
 - **PMS7003T** - Air quality sensor (PM1.0, PM2.5, PM10.0, Temperature, Humidity)
 - **MH-Z19E** - CO2 sensor
 - **Logic Level Converter** - For PMS7003T (3.3V to 5V conversion)
+- **PCB-2.7mm port converter** for PMS7003T
 - **Breadboard**
 - **Jumper wires**
 - **USB cable** for Arduino
