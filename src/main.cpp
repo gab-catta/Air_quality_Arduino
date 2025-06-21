@@ -14,7 +14,7 @@ void assessAirQuality(String status_pms, String status_co2) {
     Serial.println("PM1.0 assessment not possible since the sensor didn't work");
   }
   else {
-    // pm1.0 assessment
+    // PM1.0 assessment
     Serial.print("PM2.5 Quality: ");
     if (currentData.pm1_0 <= 12) {
       Serial.println("Good");
@@ -131,16 +131,14 @@ void displayData(String status_pms, String status_co2) {
     Serial.println(" ppm");
   }
   
-  // Air quality assessment
   Serial.println("\n--- Air Quality Assessment ---");
   assessAirQuality(status_pms,status_co2);
   Serial.println("\n============================NEW READ======================================");
 }
 
 void setup() {
-  // Initialize serial communication
-  Serial.begin(9600);
 
+  Serial.begin(9600);
   // Initialize PMS7003T sensor
   pmsSerial.begin(9600);
   delay(2000);
@@ -151,7 +149,6 @@ void setup() {
   delay(2000);
   Serial.println("MH-Z19E sensor initialized");
   
-  // Wait for sensors to warm up
   Serial.println("\n/----------------------Air Quality Monitor Starting-----------------------/");
   Serial.println("Warming up sensors (30 seconds)...");
   delay(30000);
@@ -190,5 +187,5 @@ void loop() {
     currentData.timestamp = lastDisplay;
   }
   
-  delay(100); // Small delay to prevent overwhelming the system
+  delay(100);
 }

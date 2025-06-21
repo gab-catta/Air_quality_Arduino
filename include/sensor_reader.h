@@ -3,7 +3,6 @@
 #include "BLINKER_PMSX003ST.h"
 #include "air_quality_data.h"
 
-// Extern declaration for shared AirQualityData instance
 extern AirQualityData currentData;
 extern byte co2Request[];
 
@@ -41,7 +40,7 @@ String readPMSData() {
 }
 
 
-//CHECK for MH-Z19E library 
+//CHECK for a MH-Z19E library 
 String readCO2Data() {
   String status_co2 = "";
   Serial.println("Reading CO2 data...");
